@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏠 唐朝百科</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+        :root {
+            --background-color: #ffffff;
+            --text-color: #000000;
+            --card-background: rgba(255, 255, 255, 0.8);
+            --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --backdrop-filter: blur(10px);
+        }
+        [data-theme="dark"] {
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --card-background: rgba(18, 18, 18, 0.8);
+            --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            --backdrop-filter: blur(10px);
+        }
+        header, footer {
+            background: var(--card-background);
+            box-shadow: var(--card-shadow);
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: var(--backdrop-filter);
+        }
+        header {
+            top: 0;
+        }
+        footer {
+            bottom: 0;
+        }
+        .container {
+            margin: 6rem 1rem 3rem; /* 增加顶部间距，避免顶栏遮挡 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background: var(--card-background);
+            box-shadow: var(--card-shadow);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 0.5rem; /* 减少卡片间的间距 */
+            width: 100%;
+            max-width: 800px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: var(--backdrop-filter);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 1rem;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .card p {
+            line-height: 1.6;
+        }
+        .card input, .card textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+        .card button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            background: #007BFF;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s ease;
+        }
+        .card button:hover {
+            background: #0056b3;
+        }
+        .card button:active {
+            transform: scale(0.95);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📎 唐朝百科</h1>
+        <nav>
+            <a href="#">🏠 首页</a>
+            <a href="#">📢 公告</a>
+            <a href="#">✨ 介绍</a>
+            <a href="#">❤️ 关于</a>
+            <a href="#">🐟 水煮鱼服务器状态</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h1>📢 置顶公告，一手资料提早晓。</h1>
+            <h2>💹 青春正当时，历史须学好。若欲学历史，选本站最好。</h2>
+        </div>
+        <div class="card">
+            <h1>🎉 遇唐人，知唐事，通古今。</h1>
+            <h2>🧨 接触禁忌知识，了解唐人唐友。</h2>
+            <p>🎇 憎恶唐史，接触唐诗，逐喜唐人，爱上层楼。<br>😀 毛舒鸢如此评价道：“唐朝百科堪比天工开物。一手史料，二手内裤，三手唐人，皆可找到。”</p>
+        </div>
+        <div class="card">
+            <h1>🏕️ 景生情，情生万物。</h1>
+            <h2>🏜️ 就景抒真情，学史我先行。</h2>
+            <p>✅ 我们尊重每位唐朝风流人物名誉，肖像，姓名权利。由此，所有文章名字采取化名措施，保障每位唐朝风流人物光明正大出名，个人隐私密不透风。<br>⚠️ 站点使用图片仅作为辅文作用，不代表文中人物。</p>
+        </div>
+        <div class="card">
+            <h1>⚡ 快如闪现，风驰电掣。</h1>
+            <h2>⛺ 唐朝百科全面重建，访问速度快上加快。</h2>
+            <p>🚀 体验 Github 强力驱动的全新唐朝百科，坚如磐石，快如闪电。</p>
+        </div>
+        <div class="card">
+            <h1>🥁 文案新颖，别出心裁。</h1>
+            <h2>🎸 直观白话文，地道老北京。</h2>
+            <p>🪕 让学习唐诗宛如恰老北京炸酱面一样舒服！</p>
+        </div>
+
+        <div class="card">
+            <h2>😆 醉人舞步悬，论史正当时。</h2>
+            <img src="ZactorXD.png" alt="ZactorXD">
+            <p>😲 留言，恰史，正当时！</p>
+            <textarea placeholder="⚡ 爷爷这样对我，我要刀叉我哥！"></textarea>
+            <button>✅ 给大家恰</button>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © TangerinePeel. All rights reserved.</p>
+    </footer>
+    <script>
+        // 检测系统主题并应用
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        document.body.dataset.theme = prefersDarkScheme.matches ? "dark" : "light";
+        prefersDarkScheme.addEventListener("change", (e) => {
+            document.body.dataset.theme = e.matches ? "dark" : "light";
+        });
+
+        // 添加点击回弹动画
+        document.querySelectorAll('.card button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+    </script>
+</body>
+</html>
