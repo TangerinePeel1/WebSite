@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏠 唐朝百科·人物速览</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: var(--background-color);
+            color: var(--text-color);
+            transition: background 0.3s, color 0.3s;
+        }
+        :root {
+            --background-color: #ffffff;
+            --text-color: #000000;
+            --card-background: rgba(255, 255, 255, 0.8);
+            --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --backdrop-filter: blur(10px);
+        }
+        [data-theme="dark"] {
+            --background-color: #121212;
+            --text-color: #ffffff;
+            --card-background: rgba(18, 18, 18, 0.8);
+            --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            --backdrop-filter: blur(10px);
+        }
+        header, footer {
+            background: var(--card-background);
+            box-shadow: var(--card-shadow);
+            padding: 1rem;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: var(--backdrop-filter);
+        }
+        header {
+            top: 0;
+        }
+        footer {
+            bottom: 0;
+        }
+        .container {
+            margin: 6rem 1rem 3rem; /* 增加顶部间距，避免顶栏遮挡 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background: var(--card-background);
+            box-shadow: var(--card-shadow);
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 0.5rem; /* 减少卡片间的间距 */
+            width: 100%;
+            max-width: 800px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: var(--backdrop-filter);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
+            max-width: 100%;
+            border-radius: 1rem;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .card p {
+            line-height: 1.6;
+        }
+        .card input, .card textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ccc;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+        }
+        .card button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            background: #007BFF;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.3s ease;
+        }
+        .card button:hover {
+            background: #0056b3;
+        }
+        .card button:active {
+            transform: scale(0.95);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎇 唐朝百科·人物速览</h1>
+        <h3>🎆 一花一世界，一叶一菩提。</h3>
+        <nav>
+            <a href="https://tangerinepeel1.github.io/WebSite/">🏡 首页</a>
+            <a href="https://tangerinepeel1.github.io/WebSite/">📢 告示</a>
+            <a href="https://tangerinepeel1.github.io/WebSite/People.html">📦 人物速览</a>
+            <a href="#">🥳 用爱发电</a>
+            <a href="#">⚠️ 隐私政策</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h1>⚠️ 保障唐人隐私，我们在行动。</h1>
+            <img src="pofang.jpg" alt="破防">
+            <p>☣️ 为避免不必要的麻烦与纠纷，保障唐人利益，使唐朝百科长久发展，我们决定将唐人名字以化名呈现。<br>🤥 现在本站引用唐人名字的方式为取唐人名字拼音首字母并组词，例如：陈斌文（CBW）在本站采用时将化名藏宝湾。</p>
+            <h1>😨 祖冲之人物小传</h1>
+            <h2>🫨 太阔怕咯！</h2>
+            <p>💹 姓名：祖冲之<br>💹 性别：男<br>💹 民族：汉<br>💹 既往病史：鼻孔大出血<br>❇️ 生卒年不详<br>❇️ 性格特征：暴躁热烈，活泼开朗<br>❇️ 优势：类似钱大胖<br>❇️ 劣势：鼻孔大出血，热衷喷人，高血糖，高血脂，急，法定监护人缺失。<br>♿ 根据《野史》记载，相传祖冲之缺失法定监护人，班级群内的祖冲之爷爷，祖冲之妈妈皆为其个人小号。可悲的是，祖冲之身患奇病，每日可至多五次鼻孔大出血且不少于五分钟。性格顽劣，忠于运动，晚自习被留选择逃走。</p>
+            <h1>😆 命定将焚的虹光。</h1>
+            <h2>🔥 罪人舞步旋，赤史正当时！</h2>
+            <img src="Hero.jpg" alt="Hero">
+            <p>😨 一起说的道理，KMnO₄！</p>
+            <label>
+                <textarea placeholder="🌉 只要把这个消息连发到五个群，你将获得一百块钱。虽然不是钱不钱的问题，但不要做了错事，让美国人耻笑我们中国人！"></textarea>
+            </label>
+            <button>🍑 去逃避！</button>
+        </div>
+
+    </div>
+    <footer>
+        <p>Copyright © TangerinePeel. All rights reserved.</p>
+    </footer>
+    <script>
+        // 检测系统主题并应用
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        document.body.dataset.theme = prefersDarkScheme.matches ? "dark" : "light";
+        prefersDarkScheme.addEventListener("change", (e) => {
+            document.body.dataset.theme = e.matches ? "dark" : "light";
+        });
+
+        // 添加点击回弹动画
+        document.querySelectorAll('.card button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                }, 150);
+            });
+        });
+    </script>
+</body>
+</html>
